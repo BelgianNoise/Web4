@@ -1,0 +1,257 @@
+@CHARSET "UTF-8";
+
+.popup-overlay {
+	visibility:hidden;
+	text-align: center;
+	background-color: var(--color);
+	margin: 0 25% 20px 25%;
+	border: black solid 3px;
+}
+
+.popup-content {
+	visibility:hidden;
+	text-align: center;
+	background-color: var(--color);
+	border: black solid 3px;
+}
+.popup-overlay.active{
+	visibility:visible;
+	text-align: center;
+	background-color: var(--color);
+	margin: 0 25% 20px 25%;
+	border: black solid 3px;
+}
+
+.popup-content.active {
+	visibility:visible;
+	text-align: center;
+	background-color: lightgreen;
+	border: black solid 3px;
+}
+
+:root{
+	--color: #7E67E7;
+	--color-text: black;
+}
+.me{
+	border-radius: 25px;
+	padding: 5px 20px;
+	margin:0;
+	border: 1px solid black;
+	background-color: var(--color);
+	color: var(--color-text);
+	overflow: hidden;
+	float: right;
+	min-width: 60%;
+	text-align: right;
+	margin-right:10px;
+}
+.other{
+	border-radius: 25px;
+	margin:0;
+	padding: 5px 20px;
+	border: 1px solid black;
+	background-color: var(--color);
+	color: var(--color-text);
+	overflow: hidden;
+	float: left;
+	min-width: 60%;
+	margin-left: 10px;
+}
+
+#friendlist{
+	border: var(--color) 1px solid;
+}
+#lechat{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border: var(--color) 1px solid;
+}
+#lechatchat{
+	display: grid;
+	grid-template-rows: 90% 10%;
+	border: 1px solid var(--color);
+}
+#lechatchatinput > input{
+	padding: 4px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+#lechatchatmessagesmessages{
+	padding-bottom: 20px;
+	overflow-y: scroll;
+}
+#lechatchatinput > button{
+	padding: 4px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#lechatchatmessages{
+	display: grid;
+	grid-template-rows: 40px 400px;
+}
+#lechatchatmessagesname{
+	font-weight: bold;
+	background-color: var(--color);
+	color: var(--color-text);
+	padding: 4px 20px;
+	margin: 0;
+}
+#lechatchatinput{
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+tr{
+	border: var(--color) 1px solid;
+}
+tr:hover{
+	background-color: var(--color);
+	color: var(--color-text);
+}
+
+body {
+	background-color: #f1f1f1;
+	font-size: 16px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	text-align: left;
+}
+
+header,main, footer {
+	margin: 10px auto;
+	width: 80%;
+	max-width: 800px;
+	display: block;
+}
+
+img {
+	max-width: 100%; /* responsive image */
+}
+
+table {
+	max-width: 100%;
+	background-color: transparent;
+	border-top: 2px solid #666;
+	border-bottom: 2px solid #666;
+	border-collapse: collapse;
+	margin-bottom: 32px;
+}
+
+th {
+	padding: 10px 40px 10px 5px;
+	border-bottom: 1px solid #666;
+	background-color: #eee;
+}
+
+td {
+	padding: 10px 40px 10px 5px;
+}
+
+.number {
+	text-align: right;
+	padding-right: 10px;
+}
+
+p>label {
+	float: left;
+	width: 25%;
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 10px;
+	color: #666;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="number"]
+	{
+	border: 1px solid #aaa;
+	color: #666;
+	height: 30px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 30%;
+	font-size: 12px;
+	line-height: 15px;
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+
+input[type="submit"],button {
+	border: 1px solid #aaa;
+	color: #666;
+	height: 30px;
+	margin-right: 6px;
+	margin-top: 2px;
+	margin-left:28%;
+	padding: 3px 3px 3px 5px;
+	font-size: 16px;
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+
+fieldset {
+	border: 1px solid #999;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+fieldset {
+	border: 1px solid #999;
+}
+
+.danger {
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	color: #b94a48;
+}
+
+p>label.has-error {
+	color: #a80f0c;
+}
+
+ul {
+	list-style-type: none;
+	margin-left: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-bottom: 40px;
+	margin-left: 0;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 100%;
+}
+
+nav ul li:first-child {
+	margin-right: 40px;
+}
+nav ul li:last-child {
+	margin-left: 40px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul li a#actual {
+	border-bottom: 1px solid black;
+}
+
+nav ul li#current {
+	border-bottom: 1px solid black;
+}

@@ -1,0 +1,22 @@
+<h1>
+  User Overview:
+</h1>
+
+<table>
+  <tr>
+  <th>UserId</th>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  <th>Gender</th>
+  <th>Age</th>
+  </tr>
+  <tr *ngFor="let person of users" (click)="select(person)">
+    <td> {{ person.userId }}</td>
+    <td> {{ person.firstname }}</td>
+    <td> {{ person.lastname }}</td>
+    <td> {{ person.geslacht }}</td>
+    <td> {{ person.leeftijd }}</td>
+  </tr>
+</table>
+<br>
+<app-updateperson [user]="selectedUser" [service]="service"></app-updateperson>

@@ -1,0 +1,29 @@
+<h2>
+    Change user: {{user.userId}}
+</h2>
+
+        <label for="firstname">Firstname:</label>
+        <input [(ngModel)]="user.firstname"
+              type="text" name="firstname"
+               id="firstname"
+               value="{{user.firstname}}">
+
+        <br><label for="lastname">Lastname:</label>
+        <input [(ngModel)]="user.lastname"
+              type="text" id="lastname"
+               name="lastname"
+               value="{{user.lastname}}">
+
+        <br><label for="geslacht">Geslacht:</label>
+        <input [(ngModel)]="user.geslacht" 
+               type="text" id="geslacht"
+               name="gelsacht"
+               value="{{user.geslacht}}">
+
+        <br><label for="leeftijd">Leeftijd:</label>
+        <input [(ngModel)]="user.leeftijd"
+               type="number" id="leeftijd"
+               name="leeftijd"
+               value="{{user.leeftijd}}">
+
+        <br><button (click)="update()">UPDATE</button>
